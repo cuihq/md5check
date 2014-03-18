@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+require 'digest/md5'
+require 'optparse'
+
+options = {}
+opt = OptionParser.new do |opts|
+  opts.banner = "Usage: md5check [options]"
+
+  opts.separator ""
+  opts.separator "Specific options:"
+
+  opts.on_tail("-f", "--file FILE", "Specify file(required).") do |file|
+    options[:file] = file
+  end
+
+  opts.separator ""
+  opts.separator "Common options:"
+
+  opts.on_tail("-v", "--version", "Show version") do
+    puts '1.0.0'
+    exit
+  end
+
+  opts.on_tail("-h", "--help", "Show this message") do
+    puts opts
+    exit
+  end
+end
+opt.parse!
+
+puts options[:file]? (Digest::MD5.file options[:file]).hexdigest : opt.help
