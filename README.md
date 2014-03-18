@@ -10,13 +10,6 @@ For the latest stable version:
 ```sh
 gem install md5check
 ```
-Or from source:
-
-```
-git clone git://github.com/chq/thin.git
-cd thin
-rake install
-```
 
 ### Usage
 
@@ -29,5 +22,5 @@ m.hexdigest # 51b1ec8d1ad08c3b7bcbcb29db8c45db0
 or
 
 ```sh
-md5check 'yourfile'
+$ md5check 'yourfile'
 ```
