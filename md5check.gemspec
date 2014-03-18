@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version     = '1.0.0'
   s.licenses    = ['MIT']
   s.summary     = "This is a digital certificates tool!"
-  s.description = "Much longer explanation of the example!"
+  s.description = "This is a digital certificates tool!"
   s.authors     = ["cuihq"]
   s.email       = 'cuihaiqin@google.com'
   s.executables << 'md5check'
