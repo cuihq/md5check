@@ -3,6 +3,8 @@ md5check
 
 md5checker is a digital certificates tool for file
 
+[![Code Climate](https://codeclimate.com/repos/532ad6ab695680145f00c3eb/badges/dc0d49428539f3ef93e2/gpa.png)](https://codeclimate.com/repos/532ad6ab695680145f00c3eb/feed)
+
 ### Installation
 
 For the latest stable version:
